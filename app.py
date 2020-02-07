@@ -6,8 +6,8 @@ app.secret_key = ""
 CORS(app)
 
 @app.route('/hello', methods=['GET'])
-def hello():
-    print('Hello from the dummy app')
+def hello():    
+    return 'Hello from the dummy app'
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8888)
